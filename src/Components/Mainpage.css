@@ -1,0 +1,25 @@
+
+  
+  .main-div {
+    position: relative; 
+    padding: 20px; 
+    z-index: 1; 
+}
+ 
+ .project-div{
+   display: inline-block;
+   animation: fallFromSky 1s ease-out forwards;
+   opacity: 0;
+   transform: translateY(-500px);
+  
+ }
+ @keyframes fallFromSky {
+   0% {
+     opacity: 0;
+     transform: translateY(-500px);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
