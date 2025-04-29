@@ -36,7 +36,7 @@ const Skilled = [
       },
   ];
   return (
-    <div className="min-h-screen p-8 " style={{ backgroundColor: "rgb(59, 57, 57)"}}>
+    <div className="min-h-screen p-8 " >
     <div className="max-w-5xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-black-800 flex justify-center">My Services</h1>
       <p className="text-lg text-black mb-10">
@@ -46,8 +46,8 @@ const Skilled = [
       <div className="grid gap-6 md:grid-cols-2 border-black hover:border-amber-300">
         {Skilled.map((skill, index) => (
           <div key={index} className="project-div  bg-gray-400 p-6 rounded-2xl shadow-md hover:shadow-lg  transition duration-300">
-            <h3 className="text-2xl font-bold mb-2 hover:text-yellow-300">{skill.title}</h3>
-            <p className="text-gray-600 mb-4">{skill.description}</p>
+            <h3 className="text-2xl font-bold mb-2 ">{skill.title}</h3>
+            <p className=" mb-4">{skill.description}</p>
            
           </div>
         ))}

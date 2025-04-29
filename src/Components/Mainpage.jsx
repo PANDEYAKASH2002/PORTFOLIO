@@ -11,7 +11,7 @@ function Mainpage() {
             <span className="animate-pulse text-amber-400">WEB DEVELOPER</span>
            
           </h1>
-          <p className="mb-12 text-gray-400">
+          <p className="mb-12 text-gray-100">
           Hey, I’m Akash Pandey! I'm a fresher web developer who loves turning ideas into real, working websites. I’ve built a few cool projects using HTML, CSS, JavaScript, React, and Tailwind CSS. I’m currently looking for my first professional role and would love to connect with teams that are all about building great user experiences!
           </p>
           <a href="/AkashPandey_frontenddeveloper_resume.pdf" download="AkashPandey_frontenddeveloper_resume.pdf">

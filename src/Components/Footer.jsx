@@ -45,7 +45,7 @@ function Footer() {
                     <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="/Contact" className="hover:underline me-4 md:me-6">Contact</a>
+                    <a href="/Contact"  className="hover:underline me-4 md:me-6">Contact</a>
                 </li>
               
              
