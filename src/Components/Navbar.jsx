@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 w-screen" >
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 w-full" >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between ml-5 gap-4 p-4">
           <div>
             <Link to="" className="flex items-center space-x-3 rtl:space-x-reverse">

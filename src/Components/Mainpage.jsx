@@ -2,7 +2,7 @@ import React from 'react'
 import "./Mainpage.css"
 function Mainpage() {
   return (
-    <div className='main-div flex justify-center items-center  w-screen h-screen ' style={{ backgroundColor: "rgb(59, 57, 57)"}}>
+    <div className='main-div flex justify-center items-center  w-full h-screen ' style={{ backgroundColor: "rgb(59, 57, 57)"}}>
         
   
         <div className="text-center z-10 max-w-2xl px-6">
