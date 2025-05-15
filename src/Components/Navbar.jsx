@@ -17,7 +17,7 @@ function Navbar() {
           <div>
             <Link to="" className="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="./logo2.jpg" className="h-8 rounded-full" alt="Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PORTFOLIO</span>
             </Link>
           </div>
           
