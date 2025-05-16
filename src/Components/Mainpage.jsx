@@ -1,10 +1,69 @@
-import React from 'react'
-import "./Mainpage.css"
-import "./Hero.css"
+import React, { useState } from 'react'
+import { useGSAP } from "@gsap/react";
+// import designerImg from "./logo.png"
+import gsap from 'gsap';
+import "./Hero.css";
 
-function Mainpage() {
+function Hero() {
+   const [show ,setShow]=useState(false);
+  useGSAP( () =>{
+    const tl=gsap.timeline();
+     tl.to(".vi-mask-group",{
+        rotate:10,
+        duration:2,
+        ease:"Power4.easeInOut",
+        transformOrigin:"50% 50%",
+     })
+    .to(".vi-mask-group",{
+        scale:10,
+        duration:2,
+        delay:-1.8,
+        ease:"Expo.easeInOut",
+          transformOrigin:"50% 50%",
+          opacity:"0",
+          onUpdate:function(){
+            if(this.progress()>= .9){
+                document.querySelector(".svg").remove();
+                setShow(true);
+                this.kill();
+            }
+          }
+    })
+  })
+
   return (
-    <div className='main-div flex justify-center items-center  w-full h-screen ' style={{ backgroundColor: "rgb(59, 57, 57)"}}>
+    <>    <div className='svg flex justify-center text-center h-screen w-full fixe overflow-hidden z-[100] bg-[rgb(0,0,0)]'>
+        <svg viewBox='0 0 800 600 ' preserveAspectRatio='xMidYMid slice'>
+                <defs>
+                    <mask id="vimask">
+                       <rect className='width-100vw height-100vh fill-black'> </rect>
+                       <g className='vi-mask-group'>
+                        <text
+                        x="50%"
+                        y="50%"
+                        fontSize="250"
+                        textAnchor='middle'
+                        fill='white'
+                        dominantBaseline="middle"
+                        fontFamily='Arial Black'
+                        >
+                       AP
+                        </text>
+                       </g>
+                    </mask>
+                </defs>
+
+                    <image
+                        width="100%"
+                        height="100%"
+                        href="./main.png"   
+                        preserveAspectRatio='xMidyMid slice'
+                        mask='url(#vimask)'
+
+                        />
+        </svg>
+    </div>
+     <div className='main-div flex justify-center items-center  w-full h-screen ' style={{ backgroundColor: "rgb(59, 57, 57)"}}>
         
   
         
@@ -28,9 +87,9 @@ function Mainpage() {
          
         
         </div>
-   
-  
+  </>
+
   )
 }
 
-export default Mainpage
+export default Hero
